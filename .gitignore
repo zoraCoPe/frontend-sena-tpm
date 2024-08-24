@@ -1,42 +1,53 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+#Inteliji IDEA
+.idea
+**/.idea
+**/**/.idea
+**/**/**/.idea
 
-# Compiled output
-/dist
-/tmp
-/out-tsc
-/bazel-out
+#VS Code
+.vscode
+**/.vscode
+**/**/.vscode
+**/**/**/.vscode
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+#Deploy Linux
+deploy.sh
 
-# IDEs and editors
-.idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+#Node Modules
+**/node_modules
+**/**/node_modules
+**/**/**/node_modules
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+**/package-lock.json
+**/**/package-lock.json
+**/**/**/package-lock.json
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+**/pnpm-lock.yaml
+**/**/pnpm-lock.yaml
+**/**/**/pnpm-lock.yaml
 
-# System files
+**/yarn.lock
+**/**/yarn.lock
+**/**/**/yarn.lock
+
+#Dist Folders
+dist
+**/dist
+**/**/dist
+**/**/**/dist
+
+#.scannerwork Folders
+.scannerwork
+**/.scannerwork
+**/**/.scannerwork
+**/**/**/.scannerwork
+
+#.ENV
+.env
+**/.env
+**/**/.env
+**/**/**/.env
+
 .DS_Store
-Thumbs.db
+test-report.xml
+coverage

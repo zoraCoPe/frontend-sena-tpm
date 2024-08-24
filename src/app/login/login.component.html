@@ -1,0 +1,31 @@
+<div class="flex"> 
+    <div class="h-screen w-3/5 ">
+      <div class="flex flex-col justify-center items-center h-screen"> <!--aqui voy a central en la pantalla -->
+        <p class="text-2xl mb-8 text-blue-900">Todo Puede Mejorar</p> 
+        <img src="/cena-famliar.jpeg" />
+          <p> Comer sano, Vivir mejor</p>
+      </div>
+    </div>
+    <div class="h-screen w-2/5 "> 
+        <div class="row h-screen">
+            <form class="col  flex items-center flex-col justify-center w-full h-screen" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                <div class="row">
+                    <div class="input-field col ">
+                      <input id="email" type="email" class="validate" formControlName="email">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+              
+              <div class="row">
+                <div class="input-field col ">
+                  <input id="password" type="password" class="validate" formControlName="password">
+                  <label for="password">Password</label>
+                </div>
+              </div>
+              
+              <button type="submit" class="waves-effect waves-light btn" (ngClick)="onLogin()">login</button>
+            </form>
+          </div>
+                   
+    </div> 
+</div>
