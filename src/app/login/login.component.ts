@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   imports: [FormsModule, ReactiveFormsModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
-})
+  })
 export class LoginComponent implements OnInit {
   loginForm!:FormGroup;
   constructor(private readonly iLoginService:LoginServiceService,
