@@ -1,0 +1,19 @@
+<table>
+    <thead>
+      <tr>
+          <th>Correo</th>
+          <th>Nombre Apellido</th>
+          <th>Telefono</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let persona of oPersonas">
+        <td>{{persona.email}}</td>
+        <td>{{persona.name}}</td>
+        <td>{{persona.telefono}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+        

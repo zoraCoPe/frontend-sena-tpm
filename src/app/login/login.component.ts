@@ -32,7 +32,7 @@ export class LoginComponent implements OnInit {
     this.iLoginService.login(this.loginForm.value.email,this.loginForm.value.password).subscribe(
       (oResponse)=>{
         if(oResponse.ok){
-          this.router.navigate(["/home"])
+          this.router.navigate(["/lista-pacientes"])
         } else {
           alert("el usuario ingresado no es valido")
         }
